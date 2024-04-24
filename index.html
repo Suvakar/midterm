@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Wildlife Conservation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Urban Wildlife Conservation</h1>
+            <nav>
+                <ul>
+                    <li><a href="#green-corridors">Green Corridors</a></li>
+                    <li><a href="#public-awareness">Public Awareness Campaigns</a></li>
+                    <li><a href="#policy-community">Policy & Community Involvement</a></li>
+                    <li><a href="#signup">Volunteer Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="green-corridors">
+            <div class="container">
+                <h2>Green Corridors</h2>
+                <p>Establish pathways that connect different wildlife habitats across urban areas.</p>
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffinwr.org%2Fthe-urban-wildlife-refuge-partnership%2F&psig=AOvVaw3vGn2AcxaPUE-eE5xLML6-&ust=1714010866272000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKD24Jvi2YUDFQAAAAAdAAAAABAE" alt="Green Corridors">
+            </div>
+        </section>
+
+        <section id="public-awareness">
+            <div class="container">
+                <h2>Public Awareness Campaigns</h2>
+                <p>Enhance community engagement through education.</p>
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.outsideonline.com%2Fgallery%2Furban-wildlife-conservation-program-best-outdoor-initiative-youve-never-heard%2F&psig=AOvVaw3vGn2AcxaPUE-eE5xLML6-&ust=1714010866272000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKD24Jvi2YUDFQAAAAAdAAAAABAJ" alt="Public Awareness Campaigns">
+            </div>
+        </section>
+
+        <section id="policy-community">
+            <div class="container">
+                <h2>Policy & Community Involvement</h2>
+                <p>Discuss the role of local governments and community groups in supporting conservation efforts.</p>
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.refugeassociation.org%2Fnews%2F2022%2F10%2F8%2Fcelebrating-urban-wildlife-conservation-day&psig=AOvVaw3vGn2AcxaPUE-eE5xLML6-&ust=1714010866272000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKD24Jvi2YUDFQAAAAAdAAAAABAd" alt="Policy & Community Involvement">
+            </div>
+        </section>
+
+        <section id="signup">
+            <div class="container">
+                <h2>Volunteer Signup</h2>
+                <form id="volunteer-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required><br><br>
+                    <label for="interests">Interests:</label><br>
+                    <textarea id="interests" name="interests" rows="4" cols="50"></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Urban Wildlife Conservation. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('volunteer-form');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                // You can add your form submission logic here
+                // For example, sending form data to a server
+                // or performing client-side validation
+                console.log('Form submitted');
+            });
+        });
+    </script>
+
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #6B8E23;
+            color: #FFF;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        footer {
+            background-color: #F08080;
+            color: #FFF;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer nav ul {
+            margin-top: 10px;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        footer nav ul li a {
+           
